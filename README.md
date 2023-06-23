@@ -4,13 +4,20 @@ Turborepo: Next, Express, NextAuth, Prisma, GraphQL, TypeScript, Tailwind CSS
 
 ## 🛠 Set Up
 
+1. Install dependencies using yarn
+
 ```bash
-# install dependencies using pnpm
 yarn install
+```
 
-# Install [direnv](https://direnv.net/), copy and modify `.envrc`
+2. Install [direnv](https://direnv.net/), copy and modify `.envrc`
+
+```bash
 cp .envrc.example .envrc
+```
 
-# Start the development server
+3. Start the development server
+
+```bash
 yarn dev
 ```

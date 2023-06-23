@@ -6,6 +6,6 @@ export type Resolvers = {
 
 export const resolvers: Resolvers = {
   Query: {
-    hello: () => 'Hello Zoms!',
-  },
+    hello: () => 'Hello Zoms!'
+  }
 };

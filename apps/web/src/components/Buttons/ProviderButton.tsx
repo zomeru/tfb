@@ -3,8 +3,7 @@
 import React from 'react';
 import { signIn } from 'next-auth/react';
 
-interface ProviderButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ProviderButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   provider?: 'github' | 'discord';
 }
 

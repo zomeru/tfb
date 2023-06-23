@@ -3,19 +3,15 @@
 import { signOut } from 'next-auth/react';
 import React from 'react';
 
-interface DefaultButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface DefaultButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLogout?: boolean;
 }
 
-const DefaultButton: React.FC<DefaultButtonProps> = ({
-  isLogout,
-  children,
-}) => {
+const DefaultButton: React.FC<DefaultButtonProps> = ({ isLogout, children }) => {
   const handleLogout = async () => {
     await signOut({
       callbackUrl: '/',
-      redirect: true,
+      redirect: true
     });
   };
 

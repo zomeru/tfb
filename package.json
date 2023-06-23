@@ -23,8 +23,8 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*{js,ts,tsx}": [
-      "npm run format"
+    "*{js,ts,tsx,css}": [
+      "prettier --write"
     ]
   }
 }
